@@ -9,6 +9,8 @@
 import UIKit
 
 class MenuTableViewController: UITableViewController {
+    
+    var category: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,7 @@ class MenuTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
     // MARK: - Table view data source
 

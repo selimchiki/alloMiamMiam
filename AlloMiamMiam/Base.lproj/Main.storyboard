@@ -35,7 +35,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Bq1-Lw-Ao2" kind="show" id="AbN-Lt-aTl"/>
+                                    <segue destination="Bq1-Lw-Ao2" kind="show" identifier="MenuSegue" id="AbN-Lt-aTl"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
