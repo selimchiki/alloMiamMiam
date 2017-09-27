@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -104,13 +105,70 @@
                     <view key="view" contentMode="scaleToFill" id="X4H-Ae-qhu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LTl-Ub-uq6">
+                                <rect key="frame" x="16" y="72" width="343" height="167"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BQt-ZI-meP">
+                                <rect key="frame" x="16" y="247" width="255" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idz-HE-ZNe">
+                                <rect key="frame" x="279" y="247" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6i6-3o-E9e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2f-XB-pAd">
+                                <rect key="frame" x="16" y="279" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBy-xh-exm">
+                                <rect key="frame" x="16" y="573" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Add To Order">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BQt-ZI-meP" firstAttribute="leading" secondItem="61h-aR-Bco" secondAttribute="leading" constant="16" id="CgH-GZ-Obv"/>
+                            <constraint firstItem="BQt-ZI-meP" firstAttribute="top" secondItem="LTl-Ub-uq6" secondAttribute="bottom" constant="8" id="DTr-MW-T9e"/>
+                            <constraint firstItem="LTl-Ub-uq6" firstAttribute="top" secondItem="61h-aR-Bco" secondAttribute="top" constant="8" id="JIW-1a-0TI"/>
+                            <constraint firstItem="61h-aR-Bco" firstAttribute="trailing" secondItem="LTl-Ub-uq6" secondAttribute="trailing" constant="16" id="LO6-6k-iai"/>
+                            <constraint firstItem="Idz-HE-ZNe" firstAttribute="leading" secondItem="BQt-ZI-meP" secondAttribute="trailing" constant="8" id="MB0-XN-Gjy"/>
+                            <constraint firstItem="E2f-XB-pAd" firstAttribute="leading" secondItem="61h-aR-Bco" secondAttribute="leading" constant="16" id="RML-hc-yEA"/>
+                            <constraint firstItem="61h-aR-Bco" firstAttribute="trailing" secondItem="E2f-XB-pAd" secondAttribute="trailing" constant="16" id="Sjc-yW-T0u"/>
+                            <constraint firstItem="LTl-Ub-uq6" firstAttribute="height" secondItem="X4H-Ae-qhu" secondAttribute="height" multiplier="0.25" id="ZEA-qd-qSJ"/>
+                            <constraint firstItem="fBy-xh-exm" firstAttribute="leading" secondItem="61h-aR-Bco" secondAttribute="leading" constant="16" id="acz-QK-qwg"/>
+                            <constraint firstItem="LTl-Ub-uq6" firstAttribute="leading" secondItem="61h-aR-Bco" secondAttribute="leading" constant="16" id="fv1-rK-XmT"/>
+                            <constraint firstItem="E2f-XB-pAd" firstAttribute="top" secondItem="BQt-ZI-meP" secondAttribute="bottom" constant="8" id="hkL-1I-Q79"/>
+                            <constraint firstItem="61h-aR-Bco" firstAttribute="bottom" secondItem="fBy-xh-exm" secondAttribute="bottom" constant="15" id="kCv-C6-uXt"/>
+                            <constraint firstItem="61h-aR-Bco" firstAttribute="trailing" secondItem="fBy-xh-exm" secondAttribute="trailing" constant="16" id="q1Z-Ef-zxM"/>
+                            <constraint firstItem="Idz-HE-ZNe" firstAttribute="top" secondItem="LTl-Ub-uq6" secondAttribute="bottom" constant="8" id="szt-LA-bdP"/>
+                            <constraint firstItem="61h-aR-Bco" firstAttribute="trailing" secondItem="Idz-HE-ZNe" secondAttribute="trailing" constant="16" id="xH3-8a-0rI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="61h-aR-Bco"/>
                     </view>
+                    <connections>
+                        <outlet property="addToOrderButton" destination="fBy-xh-exm" id="1BZ-ZY-4Yi"/>
+                        <outlet property="descriptionLabel" destination="E2f-XB-pAd" id="y7A-dP-Bcu"/>
+                        <outlet property="imageView" destination="LTl-Ub-uq6" id="jAV-Fx-nLh"/>
+                        <outlet property="priceLabel" destination="Idz-HE-ZNe" id="bKY-1m-ntx"/>
+                        <outlet property="titleLabel" destination="BQt-ZI-meP" id="U4N-9X-rV7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eo9-JL-6mz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2542" y="-17"/>
+            <point key="canvasLocation" x="2541.5999999999999" y="-17.541229385307346"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="wcu-iq-XbV">
