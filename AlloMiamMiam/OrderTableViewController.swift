@@ -14,7 +14,8 @@ class OrderTableViewController: UITableViewController, AddToOrderDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        navigationItem.leftBarButtonItem = editButtonItem
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -65,25 +66,23 @@ class OrderTableViewController: UITableViewController, AddToOrderDelegate {
         cell.textLabel?.text = menuItem.name
         cell.detailTextLabel?.text = String(format: "$%.2f", menuItem.price)
     }
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
-
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            menuItems.remove(at: indexPath.row)
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            updateBadgeNumber()
+        }
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
