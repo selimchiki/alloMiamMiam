@@ -84,7 +84,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="aDn-qe-zb1" kind="show" id="VWg-In-4xt"/>
+                                    <segue destination="aDn-qe-zb1" kind="show" identifier="MenuDetailSegue" id="VWg-In-4xt"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
