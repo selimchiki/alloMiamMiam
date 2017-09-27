@@ -21,6 +21,7 @@
 		F46979251F7BD7CA00E327C7 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46979241F7BD7CA00E327C7 /* MenuItem.swift */; };
 		F47BD3751F7BDB8D001266E3 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47BD3741F7BDB8D001266E3 /* MenuController.swift */; };
 		F47BD3771F7C3066001266E3 /* AddToOrderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47BD3761F7C3066001266E3 /* AddToOrderDelegate.swift */; };
+		F47BD3791F7C3646001266E3 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47BD3781F7C3646001266E3 /* OrderConfirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		F46979241F7BD7CA00E327C7 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		F47BD3741F7BDB8D001266E3 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		F47BD3761F7C3066001266E3 /* AddToOrderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToOrderDelegate.swift; sourceTree = "<group>"; };
+		F47BD3781F7C3646001266E3 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				F469791C1F7BD58700E327C7 /* CategoryTableViewController.swift */,
 				F469791E1F7BD59800E327C7 /* MenuTableViewController.swift */,
 				F46979201F7BD5A700E327C7 /* OrderTableViewController.swift */,
+				F47BD3781F7C3646001266E3 /* OrderConfirmationViewController.swift */,
 				F46978F51F7BD24000E327C7 /* Assets.xcassets */,
 				F46978F71F7BD24000E327C7 /* LaunchScreen.storyboard */,
 				F46978FA1F7BD24000E327C7 /* Info.plist */,
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F47BD3791F7C3646001266E3 /* OrderConfirmationViewController.swift in Sources */,
 				F47BD3771F7C3066001266E3 /* AddToOrderDelegate.swift in Sources */,
 				F47BD3751F7BDB8D001266E3 /* MenuController.swift in Sources */,
 				F46979251F7BD7CA00E327C7 /* MenuItem.swift in Sources */,

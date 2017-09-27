@@ -212,11 +212,57 @@
                             <outlet property="delegate" destination="wgs-YB-cYj" id="rFJ-ro-CCZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="LcU-us-Q9f"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="LcU-us-Q9f">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="fPi-Oe-fht"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="nEV-Zi-9x6" kind="show" identifier="ConfirmationSegue" id="KBt-jL-xKz"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQ1-JS-XWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1072.8" y="679.61019490254876"/>
+        </scene>
+        <!--Order Confirmation View Controller-->
+        <scene sceneID="3Yt-Vc-z4z">
+            <objects>
+                <viewController id="nEV-Zi-9x6" customClass="OrderConfirmationViewController" customModule="AlloMiamMiam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eqw-3R-wKo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNr-37-5xU">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKB-Bi-yHj">
+                                <rect key="frame" x="160" y="352" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <segue destination="IN1-Sg-JfG" kind="unwind" identifier="DismissConfirmation" unwindAction="unwindToOrderListWithSegue:" id="LTI-xV-A6u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pKW-k1-SoR" firstAttribute="trailing" secondItem="jNr-37-5xU" secondAttribute="trailing" constant="167" id="K7L-UR-cIn"/>
+                            <constraint firstItem="jNr-37-5xU" firstAttribute="leading" secondItem="pKW-k1-SoR" secondAttribute="leading" constant="166" id="k4i-Pa-eud"/>
+                            <constraint firstItem="uKB-Bi-yHj" firstAttribute="top" secondItem="jNr-37-5xU" secondAttribute="bottom" constant="8" id="nJS-md-wtt"/>
+                            <constraint firstItem="jNr-37-5xU" firstAttribute="centerY" secondItem="eqw-3R-wKo" secondAttribute="centerY" id="xpy-XV-6oO"/>
+                            <constraint firstItem="uKB-Bi-yHj" firstAttribute="centerX" secondItem="eqw-3R-wKo" secondAttribute="centerX" id="yWp-Wl-Q1f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pKW-k1-SoR"/>
+                    </view>
+                    <connections>
+                        <outlet property="timeRemainingLabel" destination="jNr-37-5xU" id="zjz-If-pat"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zwG-Pd-B8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="IN1-Sg-JfG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1831" y="680"/>
         </scene>
         <!--Your Order-->
         <scene sceneID="JAz-ic-20e">
