@@ -20,6 +20,7 @@
 		F46979231F7BD6C300E327C7 /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46979221F7BD6C300E327C7 /* MenuItemDetailViewController.swift */; };
 		F46979251F7BD7CA00E327C7 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46979241F7BD7CA00E327C7 /* MenuItem.swift */; };
 		F47BD3751F7BDB8D001266E3 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47BD3741F7BDB8D001266E3 /* MenuController.swift */; };
+		F47BD3771F7C3066001266E3 /* AddToOrderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47BD3761F7C3066001266E3 /* AddToOrderDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		F46979221F7BD6C300E327C7 /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
 		F46979241F7BD7CA00E327C7 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		F47BD3741F7BDB8D001266E3 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		F47BD3761F7C3066001266E3 /* AddToOrderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToOrderDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				F46978EE1F7BD24000E327C7 /* AppDelegate.swift */,
 				F46978F01F7BD24000E327C7 /* ViewController.swift */,
 				F46978F21F7BD24000E327C7 /* Main.storyboard */,
+				F47BD3761F7C3066001266E3 /* AddToOrderDelegate.swift */,
 				F46979241F7BD7CA00E327C7 /* MenuItem.swift */,
 				F47BD3741F7BDB8D001266E3 /* MenuController.swift */,
 				F46979221F7BD6C300E327C7 /* MenuItemDetailViewController.swift */,
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F47BD3771F7C3066001266E3 /* AddToOrderDelegate.swift in Sources */,
 				F47BD3751F7BDB8D001266E3 /* MenuController.swift in Sources */,
 				F46979251F7BD7CA00E327C7 /* MenuItem.swift in Sources */,
 				F469791F1F7BD59800E327C7 /* MenuTableViewController.swift in Sources */,

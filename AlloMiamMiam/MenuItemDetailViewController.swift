@@ -18,10 +18,13 @@ class MenuItemDetailViewController: UIViewController {
     
     
     var menuItem: MenuItem!
+    
+    var delegate: AddToOrderDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        setupDelegate()
         // Do any additional setup after loading the view.
     }
     
@@ -30,6 +33,13 @@ class MenuItemDetailViewController: UIViewController {
         priceLabel.text = String(format: "$%.2f", menuItem.price)
         descriptionLabel.text = menuItem.description
         addToOrderButton.layer.cornerRadius = 5.0
+    }
+    
+    func setupDelegate() {
+        if let navController = tabBarController?.viewControllers?.last as? UINavigationController,
+            let orderTableViewController = navController.viewControllers.first as? OrderTableViewController {
+            delegate = orderTableViewController
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,6 +52,7 @@ class MenuItemDetailViewController: UIViewController {
             self.addToOrderButton.transform = CGAffineTransform(scaleX: 3.0, y: 3.0)
             self.addToOrderButton.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }
+        delegate?.added(menuItem: menuItem)
     }
     
 

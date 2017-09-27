@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OrderTableViewController: UITableViewController {
+class OrderTableViewController: UITableViewController, AddToOrderDelegate {
 
     var menuItems = [MenuItem]()
     
@@ -28,6 +28,13 @@ class OrderTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
+    func added(menuItem: MenuItem) {
+        menuItems.append(menuItem)
+        let count = menuItems.count
+        let indexPath = IndexPath(row: count - 1, section: 0)
+        tableView.insertRows(at: [indexPath], with: .automatic)
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
