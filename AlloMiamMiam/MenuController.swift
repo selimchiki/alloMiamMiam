@@ -52,7 +52,7 @@ class MenuController {
         task.resume()
     }
     
-    func submitOrder(menuIds: [Int], completion: (Int?) -> Void) {
+    func submitOrder(menuIds: [Int], completion: @escaping (Int?) -> Void) {
         let orderURL = baseURL.appendingPathComponent("order")
         var request = URLRequest(url: orderURL)
         request.httpMethod = "POST"
@@ -68,6 +68,7 @@ class MenuController {
                         completion(prepTime)
                 } else {
                         completion(nil)
+                }
         }
         task.resume()
     }
