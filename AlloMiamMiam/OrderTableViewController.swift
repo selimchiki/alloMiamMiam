@@ -34,6 +34,12 @@ class OrderTableViewController: UITableViewController, AddToOrderDelegate {
         let count = menuItems.count
         let indexPath = IndexPath(row: count - 1, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
+        updateBadgeNumber()
+    }
+    
+    func updateBadgeNumber() {
+        let badgeValue = menuItems.count > 0 ? "\(menuItems.count)" : nil
+        navigationController?.tabBarItem.badgeValue = badgeValue
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
